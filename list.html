@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17/100; Todo app</title>
+
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="list.css"> 
+<!-- Defer loading of the list.js file until the docoment is parsed -->
+<script src="list.js" defer></script>
+</head>
+<body>
+    <!-- To-do section containing to-do list -->
+    <section class="todo">
+        <!-- Heading for the to-do list -->
+        <h1>To-do List <img src="images/todo list img.jpg"></h1>
+        <!-- Input field and button for adding new todos -->
+        <div class="input">
+            <input type="text" class="input-field" id="todoInput" placeholder="Add a new task">
+            <button class="btn">Add</button>
+        </div>
+
+        <!-- Unordered list for displaying todos -->
+        <ul class="scroll">
+            <!-- placeholder list item with id "todoList" -->
+            <li id="todoList"></li>
+        </ul>
+
+        <!-- Container for todo count and delete button -->
+        <div>
+            <!-- Horizontal rule for seperation -->
+            <hr class="counter">
+
+            <!--Container for displaying todo count and delete button  -->
+            <div class="counter-container">
+                <!-- Paragraph displaying the total number of items -->
+                <p><span id="todoCount">0</span> items total</p>
+
+                <!-- Button for deleting all todos -->
+                <button id="deleteButton">Delete All</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
